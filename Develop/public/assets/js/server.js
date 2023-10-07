@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-const PORT = 3002;
+app.listen(3002);
 
 app.use(express.static('public'));
 
@@ -15,6 +15,6 @@ app.get('/index', (req, res) =>
 app.get('/notes', (req,res) =>
    res.sendFile(path.join(__dirname, 'public/notes.html')));
 
-app.listen(PORT, () => 
-console.log(`Listening at http://localhost:${PORT}`)
-);
+// app.listen(PORT, () => 
+// console.log(`Listening at http://localhost:${PORT}`)
+// );
