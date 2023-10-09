@@ -36,6 +36,9 @@ const getNotes = () =>
     }
   });
 
+
+//SAVE BUTTON
+
 const saveNote = (note) =>
   fetch('/api/notes', {
     method: 'POST',
@@ -43,7 +46,19 @@ const saveNote = (note) =>
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(note)
-  });
+  })
+
+  .then((res) => res.json())
+    .then((data) => {
+      console.log('Successful POST request:', data);
+      return data;
+    })
+    .catch((error) => {
+      console.error('Error in POST request:', error);
+    });
+
+
+    //DELETE BUTTON
 
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
