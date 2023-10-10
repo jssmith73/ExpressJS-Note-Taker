@@ -29,7 +29,7 @@ const hide = (elem) => {
 let activeNote = {};
 
 const getNotes = () =>
-  fetch('/api/notes', {
+  fetch('/notes', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -37,10 +37,11 @@ const getNotes = () =>
   });
 
 
+
 //SAVE BUTTON
 
 const saveNote = (note) =>
-  fetch('/api/notes', {
+  fetch('/notes.html', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -50,6 +51,12 @@ const saveNote = (note) =>
 
   .then((res) => res.json())
     .then((data) => {
+      // fs.writeFile(`./db/${newNote.title}.json, ./db/${newNote.text}`, saveNote, (err) =>
+      // err
+      // ? console.error(err)
+      // : console.log(
+      //   `Note saved!`
+      // ))
       console.log('Successful POST request:', data);
       return data;
     })
@@ -66,7 +73,7 @@ const saveNote = (note) =>
     //DELETE BUTTON
 
 const deleteNote = (id) =>
-  fetch(`/api/notes/${id}`, {
+  fetch(`/notes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
