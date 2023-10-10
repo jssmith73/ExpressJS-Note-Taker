@@ -57,6 +57,11 @@ const saveNote = (note) =>
       console.error('Error in POST request:', error);
     });
 
+      const newNote = {
+        title: noteTitle.value.trim(),
+        text: noteText.value.trim()
+      }
+
 
     //DELETE BUTTON
 
@@ -86,6 +91,8 @@ const renderActiveNote = () => {
     noteText.value = '';
   }
 };
+
+// Note Save
 
 const handleNoteSave = () => {
   const newNote = {
