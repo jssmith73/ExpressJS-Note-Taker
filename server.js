@@ -15,23 +15,18 @@ app.use(express.static('public'));
 
 //GET REQUEST
 
-// const noteBody = {
-//    title: noteTitle.value,
-//    text: noteText.value,
-//    id: uuid()
-// }
-
+setInterval(() => {
 app.get('/api/notes', (req,res) => 
-res.json(db));
-
+res.json(db));},1000
+);
+clearInterval();
 //POST REQUEST
 
 app.post('/api/notes.html', (req, res) => {
-   res.json(`${req.method} request received`);
    console.info(req.rawHeaders);
    console.info(`${req.method} request received`);
 
-   const {title, text} = req.body;
+   const {title, text, id} = req.body;
 
    if (req.body) {
    const newNote = {
