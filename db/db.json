@@ -1,41 +1,17 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
+        "title": "For: General Grevious",
+        "text": "Hello there!",
+        "id": "6928"
     },
     {
-        "title": "Tit for..",
-        "text": "tot.",
-        "id": "bd0a"
+        "title": "For: GENERAL KENOBI",
+        "text": "You are a bold one.",
+        "id": "0499"
     },
     {
-        "title": "title",
-        "text": "tese",
-        "id": "d246"
-    },
-    {
-        "title": "Go",
-        "text": "furrit",
-        "id": "5c62"
-    },
-    {
-        "title": "asdfasd",
-        "text": "adfasd",
-        "id": "510c"
-    },
-    {
-        "title": "title",
-        "text": "asdfa",
-        "id": "35b4"
-    },
-    {
-        "title": "nothing ",
-        "text": "new",
-        "id": "851d"
-    },
-    {
-        "title": "title",
-        "text": "adsfa",
-        "id": "9e97"
+        "title": "\"Tragedy of Darth Plagueis\"",
+        "text": "(Not a story the Jedi would tell you)\n\nDarth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic, he could save others from death, but not himself.\n\n",
+        "id": "e4f7"
     }
 ]

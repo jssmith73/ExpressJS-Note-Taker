@@ -39,7 +39,7 @@ app.post('/api/notes.html', (req, res) => {
     text,
     id: uuid()
    };
-
+   db.push(newNote);
    readAndAppend(newNote, './db/db.json');
    res.json('Note added!');
    } else {
