@@ -15,8 +15,15 @@ app.use(express.static('public'));
 
 //GET REQUEST
 
-app.get('/api/notes', (req,res) => 
-res.json(db));
+app.get('/api/notes', (req,res) => {
+res.json(db);
+});
+
+// obj = 
+// fs.readFile('db.json', 'utf8', function (err, data) { 
+//  if (err) throw err;
+// obj = JSON.parse(data);
+
 
 //POST REQUEST
 

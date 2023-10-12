@@ -104,7 +104,6 @@ const handleNoteSave = () => {
     getAndRenderNotes();
     renderActiveNote();
   });
-  getAndRenderNotes(newNote);
 };
 
 
