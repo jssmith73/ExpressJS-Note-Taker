@@ -17,8 +17,10 @@
 
     Takes user's notes and stores them in the sidebar to be read again or deleted.
 
-    ![landing-page](screenshots\Screenshot 2023-10-15 113226.png)
-    ![notes-page](screenshots\Screenshot 2023-10-15 113255.png)
+![landingpage](<Screenshot 2023-10-15 113226.png>)
+
+![notes-page](<Screenshot 2023-10-15 113255.png>)
+
 
 ## Installation:
 
