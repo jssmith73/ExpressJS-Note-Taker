@@ -7,7 +7,7 @@ const {readFromFile, readAndAppend, writeToFile} = require('./public/js/helper')
 
 const app = express();
 
-const PORT = 3003;
+const PORT = process.env.PORT || 3003;
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
