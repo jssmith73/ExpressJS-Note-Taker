@@ -10,13 +10,13 @@ app = express();
 
 //GET REQUEST
 
-app.get('/api/notes', (req,res) => {
+notes.get('/notes', (req,res) => {
     res.json(db);
     });
 
 //POST REQUEST
 
-app.post('/api/notes.html', (req, res) => {
+notes.post('/notes.html', (req, res) => {
     console.info(req.rawHeaders);
     console.info(`${req.method} request received`);
  
@@ -41,7 +41,7 @@ app.post('/api/notes.html', (req, res) => {
  
  //DELETE REQUEST (NOT YET FUNCTIONAL)
  
- app.delete('/db/db.json:id', (req, res) => {
+ notes.delete('/db/db.json:id', (req, res) => {
  
  })
  
