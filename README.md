@@ -24,9 +24,9 @@
     An application to write and store notes in the sidebar of the page. Simply write out the note, click the "Save Note" button, and the note will appear to the side. To read previous notes, simply choose and click from the sidebar and it will fill the center page. 
 
 
-![landingpage](<Screenshot 2023-10-15 113226.png>)
+![landingpage](<screenshots/Screenshot 2023-10-15 113226.png>)
 
-![notes-page](<Screenshot 2023-10-15 113255.png>)
+![notes-page](<screenshots/Screenshot 2023-10-15 113255.png>)
 
 
 ## Installation:
