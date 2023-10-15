@@ -1,57 +1,19 @@
 const express = require('express');
+const notesRouter = require('./routes/notes')
 const path = require('path');
-const fs = require('fs');
-const uuid = require('./public/js/uuid');
-const db = require('./db/db.json');
-const {readFromFile, readAndAppend, writeToFile} = require('./public/js/helper');
 
 const app = express();
 
 const PORT = process.env.PORT || 3003;
 
+//MIDDLEWARE
+
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
+app.use('/notes', notesRouter);
+
 app.use(express.static('public'));
 
-//GET REQUEST
-
-app.get('/api/notes', (req,res) => {
-res.json(db);
-});
-
-
-//POST REQUEST
-
-app.post('/api/notes.html', (req, res) => {
-   console.info(req.rawHeaders);
-   console.info(`${req.method} request received`);
-
-   const {title, text, id} = req.body;
-
-   if (req.body) {
-   const newNote = {
-    title,
-    text,
-    id: uuid()
-   };
-
-//PUSHES NEW NOTES TO THE SIDEBAR
-
-   db.push(newNote);
-   readAndAppend(newNote, './db/db.json');
-   res.json('Note added!');
-   } else {
-      res.error('Something went wrong.')
-   }
-});
-
-//DELETE REQUEST (NOT YET FUNCTIONAL)
-
-app.delete('/db/db.json:id', (req, res) => {
-
-})
-
-//--------------------------//
 
 //HTML ROUTES
 
