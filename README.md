@@ -1,6 +1,12 @@
 # ExpressJS Note Taker ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+ github pages link:
+
  https://jssmith73.github.io/ExpressJS-Note-Taker/
+
+ Heroku link: 
+
+ https://intense-ridge-73258-b3e464638767.herokuapp.com/
 
 # Table of Contents
 
@@ -15,7 +21,8 @@
 
 ## Description:
 
-    Takes user's notes and stores them in the sidebar to be read again or deleted.
+    An application to write and store notes in the sidebar of the page. Simply write out the note, click the "Save Note" button, and the note will appear to the side. To read previous notes, simply choose and click from the sidebar and it will fill the center page. 
+
 
 ![landingpage](<Screenshot 2023-10-15 113226.png>)
 
